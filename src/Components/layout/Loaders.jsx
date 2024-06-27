@@ -19,7 +19,7 @@ export const LayoutLoader = () => {
       </Grid>
       <Grid item xs={12} sm={8} md={5} lg={6} height="100%">
         <Stack spacing={"1rem"}>
-          {Array.from({ length: 10 }).map((_, index) => (
+          {Array.from({ length: 8 }).map((_, index) => (
             <Skeleton key={index} variant="rectangular" height={"5rem"} />
           ))}
         </Stack>
@@ -31,11 +31,13 @@ export const LayoutLoader = () => {
         sx={{
           display: { xs: "none", md: "block" },
           // padding: "2rem",
+          
+          marginTop:"0.7rem",
           bgcolor: "rgba(0,0,0,0.85)",
         }}
         height="100%"
       >
-        <Skeleton variant="rectangular" height={"100vh"} />
+        <Skeleton variant="rectangular" height={"100vh"}  />
       </Grid>
     </Grid>
   );
