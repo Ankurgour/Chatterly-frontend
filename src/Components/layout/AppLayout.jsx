@@ -57,6 +57,8 @@ const AppLayout = () => (WrappedComponent) => {
       [chatId]
     );
     const newRequestHandler = useCallback(() => {
+      
+      console.log(data);
       dispatch(incrementNotification());
     }, [dispatch]);
     const refetchHandler = useCallback(() => {
